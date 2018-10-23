@@ -1,0 +1,7 @@
+select distinct OPRID, OPRCLASS
+from PSOPRCLS
+where OPRCLASS in (
+    select distinct CLASSID
+    from sysadm.PSAUTHITEM
+    where PNLITEMNAME = '<PAGENAME>'
+);
