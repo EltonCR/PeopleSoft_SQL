@@ -1,0 +1,9 @@
+--Tabelas da Página
+select distinct RECNAME
+from PSPNLFIELD
+where PNLNAME = 'PRCSRUNCNTL_SBP';
+
+PRCSRQSTDLG_WRK
+PRCSRUNCNTL
+--Campos da Tabela
+SELECT * FROM PSRECFIELD where RECNAME = 'PRCSRQSTDLG_WRK'
